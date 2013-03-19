@@ -1,0 +1,21 @@
+<%= form_for(@fun) do |f| %>
+  <% if @fun.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fun.errors.count, "error") %> prohibited this fun from being saved:</h2>
+
+      <ul>
+      <% @fun.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :crazy_time %><br />
+    <%= f.text_field :crazy_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

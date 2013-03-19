@@ -58,5 +58,8 @@ module FunWithTimeZones
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # set timezone to Madrid
+    config.time_zone = 'Madrid'
   end
 end
