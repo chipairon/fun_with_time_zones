@@ -53,7 +53,7 @@ Then in the form use the helper:
 ```
 
 
-In the branch solution is the same app with this workarount applied.
+In the branch workaround (https://github.com/Chipairon/fun_with_time_zones/tree/workaround) has this changes applied.
 
 This solution is based on this SO answer: http://stackoverflow.com/a/5094402/676002
 
