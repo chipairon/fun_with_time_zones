@@ -13,7 +13,11 @@
 
   <div class="field">
     <%= f.label :crazy_time %><br />
-    <%= f.text_field :crazy_time %>
+    <% if @fun.crazy_time and not @fun.crazy_time.blank? %>
+        <%= f.text_field :crazy_time, :value => format_date_for_text_field(@fun.crazy_time) %>
+    <% else %>
+        <%= f.text_field :crazy_time %>
+    <% end %>
   </div>
   <div class="actions">
     <%= f.submit %>
